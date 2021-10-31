@@ -20,22 +20,22 @@ int main(int argc, char* last_opponent_move[])
     // tit for tat strategy
     if (argc >= 2)
     {
-        if (string(last_opponent_move[2]) == "confess")
+        if (string(last_opponent_move[1]) == "confess")
         {
             // prints out "confess" if last opponent's move was "confess"
-            last_opponent_moves.push(last_opponent_move[2]);
-            my_moves.push(string(last_opponent_move[2]));
+            last_opponent_moves.push(last_opponent_move[1]);
+            my_moves.push(string(last_opponent_move[1]));
             cout << my_moves.top() << endl;
         }
-        else if (string(last_opponent_move[2]) == "silent")
+        else if (string(last_opponent_move[1]) == "silent")
         {
             // prints out "silent" if last opponent's move was "silent"
-            last_opponent_moves.push(last_opponent_move[2]);
-            my_moves.push(string(last_opponent_move[2]));
+            last_opponent_moves.push(last_opponent_move[1]);
+            my_moves.push(string(last_opponent_move[1]));
             cout << my_moves.top() << endl;
             
         }
-        else if (string(last_opponent_move[2]) == "zero")
+        else if (string(last_opponent_move[1]) == "zero")
         {
             // output "silent" if opponent's move was "zero"
             // should only run on first iteration of the game
