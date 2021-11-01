@@ -18,10 +18,8 @@ int main(int argc, char* last_opponent_move[])
     // first iteration of game will have "zero" passed through as opponent's move
     //
     // tit for tat strategy
-    if (argc >= 3)
+    if (argc >= 3 && string(last_opponent_move[1]) == "--last_opponent_move")
     {
-        if(string(last_opponent_move[1] == "--last_opponent_move")
-        {
             if (string(last_opponent_move[2]) == "confess")
             {
                 // prints out "confess" if last opponent's move was "confess"
@@ -47,7 +45,7 @@ int main(int argc, char* last_opponent_move[])
                     cout << choice[i] << endl;
                 }
             }
-        }
+        
 
     }
     if (argc < 3)
@@ -60,6 +58,5 @@ int main(int argc, char* last_opponent_move[])
 	
 	return 0;
 }
-
 
 
