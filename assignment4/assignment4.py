@@ -47,9 +47,9 @@ class my_node:
   def set_weights(node, current_layer, map):
     if current_layer >= len(map):
       return
-    node.weight = [0,0] * len(node.children)
+    node.weights = [0,0] * len(node.children)
     for i in range( len(node.children) ):
-      node.weights[i] = append(random.uniform(0,1))
+      node.weights[i] = random.uniform(0,1)
       node.children[i].set_weights(current_layer + 1, map)
       
     return
