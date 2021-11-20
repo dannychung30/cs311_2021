@@ -27,7 +27,7 @@ class my_node:
       node.children[i].children = node.children[0].children[:]
 
   def print_out(node, current_layer, map):
-    indentation = '   ' * map
+    indentation = '   ' * current_layer
     
     if current_layer >= len(map):
       print(f"{indentation} {node.name}")
