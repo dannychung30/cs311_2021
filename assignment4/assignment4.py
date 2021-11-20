@@ -53,9 +53,7 @@ class my_node:
       node.children[i].set_weights(current_layer + 1, map)
       
     return
-  
-  
-  
+
 new_node = my_node()
 new_node.create_node_children(0, node_count)
 new_node.print_out(0, node_count)
