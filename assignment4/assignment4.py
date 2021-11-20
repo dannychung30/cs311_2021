@@ -12,7 +12,7 @@ class my_node:
     letters = []
     for i in range(3):
       letters.append( random.choice(string.ascii_letters) ) # generates random set of 3 characters
-     node.name = ''.join(letters)
+    node.name = ''.join(letters)
    
   def create_node_children(node, current_layer, map):
     if current_layer >= len(map):
